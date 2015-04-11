@@ -1,0 +1,111 @@
+@media (max-width: 1024px) {
+    #fp-nav {
+        display: none;
+    }
+
+    div.wrap {
+        margin-left: 20px;
+    }
+}
+
+/* Centering text begins */
+/* Phone frame centering begins */
+@media (max-width: 900px) {
+    #phone-frame {
+        display: none;
+    }
+
+    div #main-logo {
+        margin-left: 140px;
+        top: 7%;
+    }
+    
+    .wrap h1, .wrap p {
+        text-align: center;
+        width: 900px;
+        padding: 0 150px;
+    }
+
+    #signup-email-input {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    div #main-logo {
+        margin-left: 70px;
+        top: 5%;
+    }
+
+    .wrap h1, .wrap p {
+        width: 760px;
+        padding-right: 200px;
+    }
+}
+
+
+@media (max-width: 668px) {
+    .box {
+        font-size: 14px;
+    }
+
+    div #main-logo {
+        margin-left: 0px;
+    }
+
+    .wrap h1, .wrap p {
+        width: 600px;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .box {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    div #main-logo {
+        margin-left: 0px;
+    }
+
+    .wrap h1, .wrap p {
+        width: 500px;
+        padding: 0 25px;
+    }
+
+    .section .wrap {
+        margin-top: -220px;
+    }
+
+    .wrap h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    div #main-logo {
+        padding-right: 35px;
+    }
+
+    .wrap h1, .wrap p {
+        width: 400px;
+        padding: 0 50px 0 0px;
+    }
+}
+
+@media (max-width: 370px) {
+    .wrap h1, .wrap p {
+        width: 300px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 280px) {
+    .wrap h1, .wrap p {
+        width: 220px;
+        padding: 0 5px;
+    }
+}
+
