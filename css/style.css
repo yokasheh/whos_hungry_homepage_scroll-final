@@ -242,8 +242,8 @@ div #main-logo {
 
 .mockups    {
     position: fixed;
-    width: 270px;
-    height: 540px;
+    width: 351px;
+    height: 702px;
     right: 10%;
     top: 10%;
 }
@@ -255,11 +255,11 @@ div #main-logo {
 }
 
 .mockups .section-image {
-    width: 88%;
+    width: 85%;
     height: 75%;
     position: absolute;
     margin-top: 25%;
-    margin-left: 6%;
+    margin-left: 7.5%;
     top: 0;
     left: 0;
 }
@@ -794,7 +794,6 @@ SECTIONS
 .section-image img {
     width: 100%;
     display: block;
-    max-height: 500px;
 }
 .screenshots-wrapper {
     /*-webkit-transition: 0.9s;*/
@@ -995,7 +994,6 @@ emph {
 .section-image img {
     width: 100%;
     display: block;
-    max-height: 407px;
 }
 .screenshots-wrapper {
     -webkit-transition: 0.9s;
@@ -1016,6 +1014,7 @@ emph {
 
 /*--- = Testimonial  */
 .testimonial {
+    margin-top: 24px;
     width: 360px;
 }
 .testimonial img    {
@@ -1035,4 +1034,7 @@ emph {
     margin: 0;
     font-size: 14px;
     line-height: 1.5;
+}
+.top-nav    {
+    display: none;
 }

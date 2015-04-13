@@ -6,11 +6,11 @@ $(document).ready(function() {
     })();
     $('#main-nav').sidr();
     $('#fullpage').fullpage({
-        'verticalCentered': true,
+        //'verticalCentered': true,
         'easing': 'easeInOutCirc',
         'css3': false,
         'scrollingSpeed': 350,
-        'responsive': 500,
+        //'responsive': 500,
         'slidesNavigation': true,
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',

@@ -1798,17 +1798,17 @@
 
 				var inaltime = $('#fullpage').outerHeight();
 
-				
+
 				// $('body').css('background-position-y',  );
 
-
+                var height = $('.section-image').css('height').replace('px', '');
 				 $('body').animate({ 'background-position-y': -v.dtop/inaltime * 30 }, {queue:false,duration: this.scrollDuration,easing:'easeInOutCirc'});
-				 $('.section-image img:first').animate({ 'margin-top': -v.dtop/inaltime * 407 }, {queue:false,duration: this.scrollDuration,easing:'easeInOutCirc'});
-				
-				 // $('.section-image img').animate({ 'margin-top': v.dtop }, {queue:false,duration:900,easing:'easeInOutCirc'});
-				 
+				 $('.section-image img:first').animate({ 'margin-top': -v.dtop/inaltime * height }, {queue:false,duration: this.scrollDuration,easing:'easeInOutCirc'});
 
-				 
+				 // $('.section-image img').animate({ 'margin-top': v.dtop }, {queue:false,duration:900,easing:'easeInOutCirc'});
+
+
+
 
 
 

@@ -1,51 +1,49 @@
 @media (max-width: 1024px) {
-    #fp-nav {
+    body {
+        background: teal;
+    }
+    #fp-nav,#main-logo,#social-icons, .attribution, .scroll-arrow, .testimonial, .sign-up-button {
         display: none;
     }
 
-    div.wrap {
-        margin-left: 20px;
+    .top-nav    {
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background-color: navy;
+        padding: 10px;
+        z-index: 100;
+    }
+    .top-nav .logo {
+        margin: 0 16px;
+        height: 100%;
+    }
+    .top-nav button {
+        float: right;
+        text-transform: uppercase;
+        height: 100%;
+        line-height: 1;
     }
 }
 
-/* Centering text begins */
-/* Phone frame centering begins */
-@media (max-width: 900px) {
-    #phone-frame {
-        display: none;
-    }
+@media (max-width: 600px) {
 
     div #main-logo {
         margin-left: 140px;
         top: 7%;
     }
-    
+
     .wrap h1, .wrap p {
         text-align: center;
         width: 900px;
         padding: 0 150px;
     }
 
-    #signup-email-input {
-        text-align: center;
-    }
-
-}
-
-@media (max-width: 768px) {
-    div #main-logo {
-        margin-left: 70px;
-        top: 5%;
-    }
-
     .wrap h1, .wrap p {
         width: 760px;
         padding-right: 200px;
     }
-}
-
-
-@media (max-width: 668px) {
     .box {
         font-size: 14px;
     }
@@ -58,9 +56,6 @@
         width: 600px;
         padding: 0 50px;
     }
-}
-
-@media (max-width: 550px) {
     .box {
         font-size: 14px;
         line-height: 1.5;
@@ -82,30 +77,15 @@
     .wrap h1 {
         font-size: 23px;
     }
-}
 
-@media (max-width: 480px) {
     div #main-logo {
         padding-right: 35px;
     }
 
     .wrap h1, .wrap p {
-        width: 400px;
+        width: 100%;
         padding: 0 50px 0 0px;
     }
-}
 
-@media (max-width: 370px) {
-    .wrap h1, .wrap p {
-        width: 300px;
-        padding: 0 30px;
-    }
-}
-
-@media (max-width: 280px) {
-    .wrap h1, .wrap p {
-        width: 220px;
-        padding: 0 5px;
-    }
 }
 
