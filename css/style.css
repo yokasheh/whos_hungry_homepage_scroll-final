@@ -1013,3 +1013,26 @@ emph {
 .col-center{
   margin:0 auto;
 }
+
+/*--- = Testimonial  */
+.testimonial {
+    width: 360px;
+}
+.testimonial img    {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+    margin-right: 14px;
+}
+.testimonial p {
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.4);
+    padding: 7px;
+    display: inline-block;
+    width: 220px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
