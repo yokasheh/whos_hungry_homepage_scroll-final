@@ -263,6 +263,9 @@ div #main-logo {
     top: 0;
     left: 0;
 }
+.mockups img    {
+    transition: .3s ease-in-out;
+}
 
 
 /*---------------------------------------
@@ -982,35 +985,6 @@ emph {
     margin-bottom: 20px;
 }
 
-/*Screenshots from master THIS IS WHERE YOU CAN CHANGE SCREENSHOT BOX */
-
-.screenshots-wrapper,
-.section-image {
-    overflow: hidden;
-    z-index: 10;
-    border-radius: 3px;
-}
-.screenshots-wrapper img,
-.section-image img {
-    width: 100%;
-    display: block;
-}
-.screenshots-wrapper {
-    -webkit-transition: 0.9s;
-    -o-transition: 0.9s;
-    transition: 0.9s;
-    opacity: 0;
-}
-.active .screenshots-wrapper {
-    opacity: 1;
-    overflow: visible;
-}
-.screenshots-wrapper .fp-tableCell { height: 100%!important }
-.active .section-image img { opacity: 1 }
-
-.col-center{
-  margin:0 auto;
-}
 
 /*--- = Testimonial  */
 .testimonial {
@@ -1038,3 +1012,9 @@ emph {
 .top-nav    {
     display: none;
 }
+
+/*--- =   */
+.col-center .wrap .box{
+    margin-top: 30%;
+}
+

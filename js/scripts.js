@@ -6,7 +6,7 @@ $(document).ready(function() {
     })();
     $('#main-nav').sidr();
     $('#fullpage').fullpage({
-        //'verticalCentered': true,
+        'verticalCentered': false,
         'easing': 'easeInOutCirc',
         'css3': false,
         'scrollingSpeed': 350,
