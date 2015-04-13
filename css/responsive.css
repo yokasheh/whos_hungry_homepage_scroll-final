@@ -1,3 +1,9 @@
+@media screen and (max-width: 1080px ){
+        #fp-nav,#social-icons, .attribution{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 700px ), screen and (max-height: 700px) {
     body {
         background: rgb(55,59,84);
@@ -14,7 +20,7 @@
         height: 60px;
         background-color: rgb(39,40,57);
         padding: 10px;
-        z-index: 100;
+        z-index: 400;
     }
     .top-nav .logo {
         margin: 0 16px;
@@ -92,7 +98,7 @@
         max-height: 100%;
         height: auto;
        right: 5%;
-        top: 10%;
+        top: 0%;
         z-index: 1;
         bottom: 0px;
     }
@@ -114,9 +120,10 @@
     }
 
     .col-center .wrap .box{
-        bottom: -100vh;
+        bottom: -98vh;
+        padding-bottom: 60px;
         position: absolute;
-        background-color: rgba(0,0,0, .75);
+        background-color: rgba(39,40,57, .95);
         z-index: 100;
     }
 }

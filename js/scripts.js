@@ -1,9 +1,11 @@
 $(document).ready(function() {
+/*
     (function() {
         [].slice.call(document.querySelectorAll('.tabs')).forEach(function(el) {
             new CBPFWTabs(el);
         });
     })();
+*/
     $('#main-nav').sidr();
     $('#fullpage').fullpage({
         'verticalCentered': false,

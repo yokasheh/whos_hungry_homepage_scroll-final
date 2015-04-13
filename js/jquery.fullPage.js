@@ -1803,7 +1803,7 @@
 
                 var height = $('#phone-frame img:first').css('height').replace('px', '');
 
-				 $('body').animate({ 'background-position-y': -v.dtop/inaltime * 30 }, {queue:false,duration: this.scrollDuration,easing:'easeInOutCirc'});
+				 //$('body').animate({ 'background-position-y': -v.dtop/inaltime * 30 }, {queue:false,duration: this.scrollDuration,easing:'easeInOutCirc'});
 				 $('.section-image img:first').css({ 'margin-top': -v.sectionIndex * height });
 
 				 // $('.section-image img').animate({ 'margin-top': v.dtop }, {queue:false,duration:900,easing:'easeInOutCirc'});
