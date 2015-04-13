@@ -10,6 +10,7 @@ $(document).ready(function() {
         'easing': 'easeInOutCirc',
         'css3': false,
         'scrollingSpeed': 350,
+        'responsive': 500,
         'slidesNavigation': true,
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',
@@ -18,6 +19,9 @@ $(document).ready(function() {
         'navigationPosition': 'left'
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
+    $('.scroll-arrow').click(function(){
+        $.fn.fullpage.moveSectionDown();
+    });
 
     $(document).mouseup(function (e) {
         if ($(".sidr-open ")[0]){

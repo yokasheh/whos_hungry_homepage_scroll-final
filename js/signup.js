@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
-	var signUpButton = $('#sign-up-button');
-	var signUpInput = $("#signup-email-input");
+	var signUpButton = $('.sign-up-button');
+	var signUpInput = $(".signup-email-input");
 
 	var post = function(email) {
 		console.log(email);

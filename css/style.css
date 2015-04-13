@@ -60,7 +60,7 @@ ul {
 
 
 /*---------------------------------------
-   TYPOGRAPHY                
+   TYPOGRAPHY
 -----------------------------------------*/
 
 
@@ -85,7 +85,7 @@ h6 { font-weight: 400 }
 
 
 /*---------------------------------------
-   LAYOUT          
+   LAYOUT
 -----------------------------------------*/
 
 
@@ -93,7 +93,7 @@ h6 { font-weight: 400 }
 
 .fp-section {
     position: relative;
-    -webkit-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -202,13 +202,13 @@ div #main-logo {
     opacity: 1;
     display: block;
     font-variant: normal;
-    font-size: 13px;
+    font-size: 26px;
     border: 1px solid #333;
     border-radius: 4px;
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     text-align: center;
-    line-height: 27px;
+    line-height: 46px;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
     /*-webkit-transition: 0.3s;*/
@@ -220,23 +220,40 @@ div #main-logo {
     color: #F69477;
 }
 
+/*--- = Attribution  */
+.attribution {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+
+/*--- = Scroll  */
+.scroll-arrow   {
+    position: fixed;
+    right: 50%;
+    bottom: 2%;
+}
+.scroll-arrow img   {
+    width: 100px;
+}
+
+
 /*Right side mockup*/
 
 #phone-frame {
     background: url(../images/iphone-black-mockup.png) top no-repeat;
-    width: 850px;
-    height: 1000px;
-    background-size: 32%;
+
     position: fixed;
-    margin-left: -100px;
-    top: 50%;
-    margin-top: -260px;
-    left: 50%;
+    width: 250px;
+    height: 1000px;
+    background-size: contain;
+    right: 10%;
+    top: 10%;
 }
 
 
 /*---------------------------------------
-   MENUS          
+   MENUS
 -----------------------------------------*/
 
 
@@ -408,7 +425,7 @@ div #main-logo {
 
 
 /*---------------------------------------
-   ELEMENTS          
+   ELEMENTS
 -----------------------------------------*/
 
 
@@ -751,21 +768,29 @@ SECTIONS
 .screenshots-wrapper,
 .section-image {
     position: ;
-    left: 50%;
-    top: 50%;
+    right: 10%;
+    top: 10%;
     overflow: hidden;
     z-index: 10;
-    margin-top: -192px;
-    width: 232px;
-    height: 407px;
-    margin-left: 210px;
+    width: 250px;
+    height: 500px;
+    box-sizing: border-box;
     border-radius: 3px;
+}
+.section-image::after {
+position: absolute;
+width: 500px;
+height: 400px;
+left: -20px;
+background: url(../images/iphone-black-mockup.png) no-repeat;
+background-size: contain;
+z-index: 40;
 }
 .screenshots-wrapper img,
 .section-image img {
     width: 100%;
     display: block;
-    max-height: 407px;
+    max-height: 500px;
 }
 .screenshots-wrapper {
     /*-webkit-transition: 0.9s;*/
@@ -931,7 +956,7 @@ emph {
     font-style: italic !important;
 }
 
-/* Custom styles THIS IS WHERE THE TEXT ALIGN FOR HEADERS IS */ 
+/* Custom styles THIS IS WHERE THE TEXT ALIGN FOR HEADERS IS */
 
 .wrap h1, .wrap p {
     text-align: left;
@@ -959,14 +984,8 @@ emph {
 .screenshots-wrapper,
 .section-image {
     position: fixed;
-    left: 46.1%;
-    top: 50%;
     overflow: hidden;
     z-index: 10;
-    margin-top: -192px;
-    width: 232px;
-    height: 407px;
-    margin-left: 270px;
     border-radius: 3px;
 }
 .screenshots-wrapper img,
