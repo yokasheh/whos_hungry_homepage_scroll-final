@@ -6,25 +6,51 @@ $(document).ready(function() {
         });
     })();
 */
-    $('#main-nav').sidr();
+    //$('#main-nav').sidr();
     $('#fullpage').fullpage({
         'verticalCentered': false,
         'easing': 'easeInOutCirc',
         'css3': false,
         'scrollingSpeed': 350,
-        //'responsive': 500,
+        //'responsive': 700,
         'slidesNavigation': true,
         'slidesNavPosition': 'bottom',
         'easingcss3': 'ease',
         'navigation': true,
         'anchors': ['Home', 'Features', 'About', 'Video', 'Clients', 'Screenshots', 'Pricing', 'Download', 'Contact'],
-        'navigationPosition': 'left'
+        'navigationPosition': 'left',
+        onLeave: function(index, nextIndex, direction){
+            var $scrollArrow = $('.scroll-arrow');
+            //after leaving section 2
+            if(index == 4 && direction =='down'){
+                $scrollArrow.css('opacity', 0);
+            }
+
+            else if(index == 5 && direction == 'up'){
+                $scrollArrow.css('opacity', 1);
+            }
+        }
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
+
+    $('.get-notified').click(function(){
+        var text;
+        text = signUpInput.val();
+    		post(text.trim());
+    		showThanksButton();
+    		return;
+    });
+    var signUpInput = $(".signup-email-input");
+    $('.sign-up-button').click(function(){
+        $.fn.fullpage.moveTo(5);
+        //This causes trouble with fullpage
+		//signUpInput.focus();
+    });
     $('.scroll-arrow').click(function(){
         $.fn.fullpage.moveSectionDown();
     });
 
+/*
     $(document).mouseup(function (e) {
         if ($(".sidr-open ")[0]){
         var container = $("#sidr");
@@ -35,4 +61,5 @@ $(document).ready(function() {
           $(".sidr-open #main-nav").click();
         }}
     });
+*/
 });
