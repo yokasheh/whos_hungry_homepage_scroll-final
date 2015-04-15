@@ -231,9 +231,12 @@ div #main-logo {
     position: fixed;
     right: 50%;
     bottom: 3%;
-    opacity: .6;
+    opacity: 0;
     cursor: pointer;
     transition: .3s;
+}
+.scroll-arrow.enabled   {
+    opacity: .6;
 }
 .scroll-arrow:hover {
     opacity: 1;
@@ -993,25 +996,28 @@ emph {
 /*--- = Testimonial  */
 .testimonial {
     margin-top: 24px;
-    width: 360px;
+    width: 390px;
 }
 .testimonial img    {
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     float: left;
     margin-right: 14px;
 }
 .testimonial p {
     border-radius: 5px;
+    margin-top: 2px;
     background-color: rgba(255,255,255,.2);
     padding: 7px;
     display: inline-block;
-    width: 220px;
-    margin: 0;
-    font-size: 14px;
+    width: 250px;
+    font-size: 10px;
     line-height: 1.5;
+}
+.testimonial strong {
+    /*color:  rgb(111,180,154);*/
 }
 .top-nav    {
     display: none;

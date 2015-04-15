@@ -27,19 +27,12 @@ $(document).ready(function() {
             }
 
             else if(index == 5 && direction == 'up'){
-                $scrollArrow.css('opacity', 1);
+                $scrollArrow.toggleClass("enabled");
             }
         }
     });
     $('.screenshots-content, .clients-content').css('height', $(window).height());
 
-    $('.get-notified').click(function(){
-        var text;
-        text = signUpInput.val();
-    		post(text.trim());
-    		showThanksButton();
-    		return;
-    });
     var signUpInput = $(".signup-email-input");
     $('.sign-up-button').click(function(){
         $.fn.fullpage.moveTo(5);
