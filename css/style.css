@@ -60,7 +60,7 @@ ul {
 
 
 /*---------------------------------------
-   TYPOGRAPHY                
+   TYPOGRAPHY
 -----------------------------------------*/
 
 
@@ -85,7 +85,7 @@ h6 { font-weight: 400 }
 
 
 /*---------------------------------------
-   LAYOUT          
+   LAYOUT
 -----------------------------------------*/
 
 
@@ -93,7 +93,7 @@ h6 { font-weight: 400 }
 
 .fp-section {
     position: relative;
-    -webkit-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -126,7 +126,7 @@ h6 { font-weight: 400 }
 /* Copy content for each full page section */
 .wrap {
     width: 1040px;
-    margin: -10px auto 20px auto;
+    margin: 0 auto;
     position: relative;
     box-sizing: border-box;
 }
@@ -192,9 +192,7 @@ div #main-logo {
     font-size: 28px;
     color: #333;
     text-decoration: none;
-    /*-webkit-transition: 0.3s;*/
-    /*-o-transition: 0.3s;*/
-    /*transition: 0.3s;*/
+    transition: 0.3s;
 }
 #social-icons a i {
     font-style: normal;
@@ -202,41 +200,84 @@ div #main-logo {
     opacity: 1;
     display: block;
     font-variant: normal;
-    font-size: 13px;
+    font-size: 26px;
     border: 1px solid #333;
     border-radius: 4px;
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     text-align: center;
-    line-height: 27px;
+    line-height: 46px;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
-    /*-webkit-transition: 0.3s;*/
-    /*-o-transition: 0.3s;*/
-    /*transition: 0.3s;*/
+        opacity: .6;
+    transition: .3s;
 }
 #social-icons a:hover i {
     border: 1px solid #F69477;
     color: #F69477;
+    opacity: 1;
 }
 
-/*Right side mockup*/
-
-#phone-frame {
-    background: url(../images/iphone-black-mockup.png) top no-repeat;
-    width: 850px;
-    height: 1000px;
-    background-size: 32%;
+/*--- = Attribution  */
+.attribution {
     position: fixed;
-    margin-left: -100px;
-    top: 50%;
-    margin-top: -260px;
-    left: 50%;
+    right: 11%;
+    bottom: 2%;
+    opacity: .6;
+}
+
+/*--- = Scroll  */
+.scroll-arrow   {
+    position: fixed;
+    right: 50%;
+    bottom: 3%;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.scroll-arrow.enabled   {
+    opacity: .6;
+}
+.scroll-arrow:hover {
+    opacity: 1;
+}
+.scroll-arrow img   {
+    width: 100px;
+}
+
+
+/*--- = Mockups  */
+
+.mockups    {
+    position: fixed;
+    width: 351px;
+    height: 702px;
+    right: 10%;
+    top: 10%;
+}
+.mockups #phone-frame {
+    background: url(../images/iphone-black-mockup.png) top no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.mockups .section-image {
+    width: 85%;
+    height: 75%;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 7.5%;
+    top: 0;
+    left: 0;
+}
+.mockups img    {
+    transition: .3s ease-in-out;
 }
 
 
 /*---------------------------------------
-   MENUS          
+   MENUS
 -----------------------------------------*/
 
 
@@ -343,7 +384,7 @@ div #main-logo {
     z-index: 100;
     margin-top: -32px;
     top: 52%;
-    opacity: 1;
+    opacity: .6;
 }
 #fp-nav.left { left: 17px }
 #fp-nav span,
@@ -408,7 +449,7 @@ div #main-logo {
 
 
 /*---------------------------------------
-   ELEMENTS          
+   ELEMENTS
 -----------------------------------------*/
 
 
@@ -751,21 +792,19 @@ SECTIONS
 .screenshots-wrapper,
 .section-image {
     position: ;
-    left: 50%;
-    top: 50%;
+    right: 10%;
+    top: 10%;
     overflow: hidden;
     z-index: 10;
-    margin-top: -192px;
-    width: 232px;
-    height: 407px;
-    margin-left: 210px;
+    width: 250px;
+    height: 500px;
+    box-sizing: border-box;
     border-radius: 3px;
 }
 .screenshots-wrapper img,
 .section-image img {
     width: 100%;
     display: block;
-    max-height: 407px;
 }
 .screenshots-wrapper {
     /*-webkit-transition: 0.9s;*/
@@ -903,23 +942,24 @@ SECTIONS
 }
 
 #submit {
-font-weight: 700;
-border-radius: 4px;
-color: #ffffff;
-border: none;
-min-width: 120px;
-font-size: 15px;
-margin-right: 10px;
-text-decoration: none;
-outline: none;
-padding: 10px 20px;
-cursor: pointer;
-margin-top: 10px;
-margin-bottom: 10px;
-/*-webkit-transition: 0.3s;*/
-/*-o-transition: 0.3s;*/
-/*transition: 0.3s;*/
-background: #F69477;}
+    font-weight: 700;
+    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    min-width: 120px;
+    font-size: 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*-webkit-transition: 0.3s;*/
+    /*-o-transition: 0.3s;*/
+    /*transition: 0.3s;*/
+    background: #F69477;
+    }
 
 #submit:hover {
     background: #fff;
@@ -931,7 +971,7 @@ emph {
     font-style: italic !important;
 }
 
-/* Custom styles THIS IS WHERE THE TEXT ALIGN FOR HEADERS IS */ 
+/* Custom styles THIS IS WHERE THE TEXT ALIGN FOR HEADERS IS */
 
 .wrap h1, .wrap p {
     text-align: left;
@@ -939,10 +979,8 @@ emph {
 
 .signup-email-input {
     font-size: 16px;
-    display: none;
     max-width: 400px;
     margin-bottom: 12px;
-    text-align: right;
 }
 
 #sign-up-button {
@@ -954,40 +992,43 @@ emph {
     margin-bottom: 20px;
 }
 
-/*Screenshots from master THIS IS WHERE YOU CAN CHANGE SCREENSHOT BOX */
 
-.screenshots-wrapper,
-.section-image {
-    position: fixed;
-    left: 46.1%;
-    top: 50%;
-    overflow: hidden;
-    z-index: 10;
-    margin-top: -192px;
-    width: 232px;
-    height: 407px;
-    margin-left: 270px;
-    border-radius: 3px;
+/*--- = Testimonial  */
+.testimonial {
+    margin-top: 24px;
+    width: 390px;
 }
-.screenshots-wrapper img,
-.section-image img {
-    width: 100%;
-    display: block;
-    max-height: 407px;
+.testimonial img    {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+    margin-right: 14px;
 }
-.screenshots-wrapper {
-    -webkit-transition: 0.9s;
-    -o-transition: 0.9s;
-    transition: 0.9s;
-    opacity: 0;
+.testimonial p {
+    border-radius: 5px;
+    margin-top: 2px;
+    background-color: rgba(255,255,255,.2);
+    padding: 7px;
+    display: inline-block;
+    width: 250px;
+    font-size: 10px;
+    line-height: 1.5;
 }
-.active .screenshots-wrapper {
-    opacity: 1;
-    overflow: visible;
+.testimonial strong {
+    /*color:  rgb(111,180,154);*/
 }
-.screenshots-wrapper .fp-tableCell { height: 100%!important }
-.active .section-image img { opacity: 1 }
+.top-nav    {
+    display: none;
+}
 
-.col-center{
-  margin:0 auto;
+/*--- =   */
+.col-center .wrap .box{
+    margin-top: 30%;
+}
+
+#main-logo img  {
+    max-width: 50vw;
+    cursor: default;
 }
